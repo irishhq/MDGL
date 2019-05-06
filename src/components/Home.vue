@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="6">
+      <el-col :span="4">
         <el-menu
           class="el-menu-vertical-demo"
           @select="handleSelect"
@@ -90,7 +90,7 @@
               <span>预约ppo</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="8-1">医师管理</el-menu-item>
+              <el-menu-item index="/Ppo/TrainerManager">医师管理</el-menu-item>
               <el-menu-item index="8-2">预约管理</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
@@ -118,7 +118,7 @@
           </el-submenu>
         </el-menu>
       </el-col>
-      <el-col :span="18">
+      <el-col :span="20">
         <router-view/>
       </el-col>
     </el-row>
