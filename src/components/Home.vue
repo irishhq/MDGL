@@ -26,9 +26,9 @@
               <span>资源配置Res</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="2-1">项目配置</el-menu-item>
-              <el-menu-item index="2-2">症状类型</el-menu-item>
-              <el-menu-item index="2-3">提示语</el-menu-item>
+              <el-menu-item index="/Res/ProjectConfiguration">项目配置</el-menu-item>
+              <el-menu-item index="/Res/DiseaseTypes">症状类型</el-menu-item>
+              <el-menu-item index="/Res/MarkedWords">提示语</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
@@ -37,7 +37,7 @@
               <span>训练管理训练tra</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="3-1">训练记录</el-menu-item>
+              <el-menu-item index="/Tra/TrainingRecords">训练记录</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="4">
@@ -67,11 +67,11 @@
               <span>消息中心new</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="6-1">充值通知</el-menu-item>
-              <el-menu-item index="6-2">课程通知</el-menu-item>
-              <el-menu-item index="6-3">训练通知</el-menu-item>
-              <el-menu-item index="6-4">系统公告</el-menu-item>
-              <el-menu-item index="6-5">系统通知</el-menu-item>
+              <el-menu-item index="/New/VoucherCenter">充值通知</el-menu-item>
+              <el-menu-item index="/New/CourseNotice">课程通知</el-menu-item>
+              <el-menu-item index="/New/TrainingNotification">训练通知</el-menu-item>
+              <el-menu-item index="/New/SystemAnnouncement">系统公告</el-menu-item>
+              <el-menu-item index="/New/SystematicNotification">系统通知</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="7">
@@ -80,8 +80,8 @@
               <span>充值管理充值Rec</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="7-1">充值记录</el-menu-item>
-              <el-menu-item index="7-2">充值类型</el-menu-item>
+              <el-menu-item index="/Rec/RechargeRecord">充值记录</el-menu-item>
+              <el-menu-item index="/Rec/RechargeType">充值类型</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="8">
