@@ -146,15 +146,38 @@ export default {
         desc: ""
       },
       formLabelWidth: "120px",
-      pageCount: 3,
-      pageSize: 3,
+      pageCount: 1,
+      pageSize: 1,
       pageCurrent: 1,
       editMsg: {},
       appoTime: {},
       appoTimeArr: []
     };
   },
+  created() {},
+  mounted() {
+    this.getData();
+  },
   methods: {
+    getData() {
+      // let urlHost = process.env.API_HOST;
+      // console.log("======================");
+      // console.log(urlHost);
+      // console.log("======================");
+      this.axios("/api/appointment/doFindPageObjects?pageCurrent=1")
+        .then((response) => {
+          console.log("======================");
+          console.log(response.data.data);
+          console.log("======================");
+          let result = response.data.data;
+          this.pageCount = result.pageCount;
+          this.pageSize = result.pageSize;
+          this.pageCurrent = result.pageCurrent;
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    },
     // 时间格式化
     padLeftZero(str) {
       return ("00" + str).substr(str.length);
